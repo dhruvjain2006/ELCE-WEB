@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Simple Timetable (Student)</title>
+</head>
+<body>
+  <!-- Simple timetable using rowspan and colspan -->
+  <table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse; font-family:Arial, sans-serif;">
+    <!-- header row with period numbers -->
+    <tr>
+      <th>Day</th>
+      <th>P1</th>
+      <th>P2</th>
+      <th>P3</th>
+      <th>P4</th>
+      <th>P5</th>
+      <th>Lunch</th>
+      <th>P6</th>
+      <th>P7</th>
+      <th>P8</th>
+    </tr>
+    <!-- Monday -->
+    <tr>
+      <td>Monday</td>
+      <td>25ME101<br>(MNS)</td>
+      <td>25EC101<br>(KC)</td>
+      <td>25VA151</td>
+      <td>25AS102</td>
+      <td>25HJ101</td>
+      <!-- Lunch cell spans all 5 weekdays -->
+      <td rowspan="5" style="text-align:center; vertical-align:middle;">LUNCH</td>
+      <td>25ME151</td>
+      <td>25AS102</td>
+      <td>25AS102</td>
+    </tr>
+    <!-- Tuesday -->
+    <tr>
+      <td>Tuesday</td>
+      <td>25HJ151</td>
+      <td>25HJ101</td>
+      <td>25EC101</td>
+      <td>25ME101</td>
+      <td></td>
+      <td>25AS102</td>
+      <td>25HJ102</td>
+      <td>Mentor/Mentee</td>
+    </tr>
+    <!-- Wednesday -->
+    <tr>
+      <td>Wednesday</td>
+      <td>25AS102</td>
+      <td>25EC101</td>
+      <td>25ME101</td>
+      <!-- combine P4 and P5 into one long lecture -->
+      <td colspan="2">25CS151 (long session)</td>
+      <td>25HJ102</td>
+      <td>25AS102</td>
+    </tr>
+    <!-- Thursday -->
+    <tr>
+      <td>Thursday</td>
+      <td>25EC101</td>
+      <td>25HJ101</td>
+      <td>25AS102</td>
+      <td>25CS101</td>
+      <td>25CS101</td>
+      <td>25EC151</td>
+      <td>25ME101</td>
+    </tr>
+    <!-- Friday -->
+    <tr>
+      <td>Friday</td>
+      <td>25ME101</td>
+      <td>25AS102</td>
+      <!-- P3 spans two columns to show a combined practical -->
+      <td colspan="2">25VA151 (Practical)</td>
+      <td>25HJ102</td>
+      <td>25EC101</td>
+      <td>25CS101</td>
+      <td>25CS101</td>
+    </tr>
+
+  </table>
+</body>
+</html>
